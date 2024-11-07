@@ -1,0 +1,105 @@
+/* css/style.css */
+/* Mengatur properti dasar untuk seluruh elemen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mengatur properti untuk tampilan utama halaman */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, blue, azure);
+    height: 100vh;
+    color: #333;
+}
+
+/* Mengatur tampilan container utama */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(35, 40, 43, 0.15);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Judul halaman */
+h1 {
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Paragraf keterangan */
+p {
+    font-size: 1em;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* mengatur konten */
+.content {
+    display: flex;
+    gap: 20px;
+}
+
+/* form result*/
+.form-section, .result {
+    flex: 1;
+}
+
+/* Mengatur tampilan untuk grup form */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Label input */
+
+label {
+    display: block;
+    font-weight: bold;
+    color: rgb(148, 145, 145);
+}
+
+/* Input dan select */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Tombol submit */
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Tampilan hasil BMI */
+.result {
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(10, 26, 26);
+    color: turquoise;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
