@@ -1,105 +1,132 @@
-/* css/style.css */
-/* Mengatur properti dasar untuk seluruh elemen */
-* {
-    box-sizing: border-box;
+/* Mengatur gaya dasar untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
-}
-
-/* Mengatur properti untuk tampilan utama halaman */
-body {
-    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to right, blue, azure);
     height: 100vh;
-    color: #333;
 }
 
-/* Mengatur tampilan container utama */
-.container {
-    display: flex;
+/* Mengatur gaya untuk kontainer utama */
+.container { display: flex;
+    font-size: 10px;
     justify-content: space-evenly;
     background-color: #ffffff;
-    padding: 30px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(35, 40, 43, 0.15);
-    max-width: 800px;
-    width: 100%;
-    text-align: center;
+    text-align: justify;
 }
 
-/* Judul halaman */
+/* Mengatur gaya untuk judul utama */
 h1 {
-    color: blue;
-    font-size: 2em;
+    color: #333;
     margin-bottom: 10px;
 }
 
-/* Paragraf keterangan */
-p {
-    font-size: 1em;
-    color: gray;
-    margin-bottom: 20px;
+/* Gaya untuk keterangan dan peringatan */
+p{
+    font-size: 10px;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.6;
 }
 
-/* mengatur konten */
-.content {
-    display: flex;
-    gap: 20px;
-}
-
-/* form result*/
-.form-section, .result {
-    flex: 1;
-}
-
-/* Mengatur tampilan untuk grup form */
-.form-group {
-    margin-bottom: 15px;
+/* Gaya untuk daftar fitur dan penyakit */
+ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+    color: #666;
     text-align: left;
 }
 
-/* Label input */
+#bmiform{ font-size: 10px;}
+/* Gaya untuk form */
+.form-group {
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    text-align: left;
+}
 
+/* Gaya untuk label pada form */
 label {
     display: block;
+    color: #333;
     font-weight: bold;
-    color: rgb(148, 145, 145);
+    margin-bottom: 5px;
 }
 
-/* Input dan select */
-input, select {
+/* Gaya untuk input form */
+input[type="number"], select {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid gray;
+    padding: 8px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 1em;
+    box-sizing: border-box;
 }
 
-/* Tombol submit */
+/* Gaya untuk radio button */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Gaya untuk tombol */
+.form-buttons {
+    font-size: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
 .btn {
-    background-color: blue;
-    color: white;
-    padding: 10px 20px;
+    padding: 5px 10px;
+    cursor: pointer;
     border: none;
     border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
+    color: #fff;
+    font-weight: bold;
 }
 
-/* Tampilan hasil BMI */
+.btn:hover {
+    opacity: 0.9;
+}
+
+.reset-btn {
+    background-color: #f44336; /* Warna merah untuk tombol reset */
+}
+
+.btn {
+    background-color: #4CAF50; /* Warna hijau untuk tombol hitung */
+}
+
+/* Gaya untuk hasil BMI */
 .result {
+    margin-top: 20px;
     padding: 15px;
     border-radius: 5px;
-    background-color: rgb(10, 26, 26);
-    color: turquoise;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.result h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.result p {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Menyembunyikan elemen hasil secara default */
+.hidden {
+    display: none;
 }
